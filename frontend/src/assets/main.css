@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'IBMPlexSansThaiLooped';
+    src: url('@/assets/fonts/ibm_plex_sans_thai/IBMPlexSansThaiLooped-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* กำหนด Design Token ของ ShopMini (Tailwind v4 ตั้งค่าใน CSS ได้เลย ไม่ต้องมี tailwind.config.js) */
+@theme {
+  --color-brand-50: #f0fdfa;
+  --color-brand-100: #ccfbf1;
+  --color-brand-600: #0d9488;
+  --color-brand-700: #0f766e;
+  --font-sans: "IBMPlexSansThaiLooped", ui-sans-serif, system-ui, sans-serif;
+}
